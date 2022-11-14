@@ -1,17 +1,13 @@
 import React, { Suspense, lazy } from 'react'
 import { Routes, Route } from 'react-router-dom'
 
-const Cart = lazy(() => import('../pages/Cart'))
-const Payment = lazy(() => import('../pages/Payment'))
-const Confirmation = lazy(() => import('../pages/Confirmation'))
+const Home = lazy(() => import('../pages/Home'))
 
 const Router = () => {
   return (
     <Suspense fallback={<div>Carregando...</div>}>
       <Routes>
-        <Route path="/" element={<Cart />} />
-        <Route path="/pagamento" element={<Payment />} />
-        <Route path="/confirmacao" element={<Confirmation />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </Suspense>
   )

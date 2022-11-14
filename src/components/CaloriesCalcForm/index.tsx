@@ -38,7 +38,6 @@ const CaloriesCalcForm: React.FC = () => {
 
   return (
     <div>
-      <h1>CaloriesCalcForm</h1>
       <p>
         {calories}
       </p>
